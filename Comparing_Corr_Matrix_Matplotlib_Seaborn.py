@@ -6,7 +6,8 @@ import seaborn as sns
 def generate_data():
     np.random.seed(42)
     data = np.random.randn(5, 5)
-    return data
+    corr_data = np.corrcoef(data.T)
+    return corr_data
 
 # Create a correlation matrix plot with Matplotlib
 def matplotlib_corr_matrix(data):
