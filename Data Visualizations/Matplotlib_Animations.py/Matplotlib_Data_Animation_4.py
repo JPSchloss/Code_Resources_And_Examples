@@ -1,3 +1,5 @@
+# Heat Map Visualization
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -32,7 +34,7 @@ def init():
 def update(frame):
     global data
     
-    # Adding structured patterns (sinusoidal waves) to data
+    # Adding sinusoidal waves to data beacuase it looks pretty cool.
     for i in range(rows):
         for j in range(cols):
             data[i, j] += 0.005 * np.sin(i + frame * 0.1) * np.sin(j + frame * 0.1)

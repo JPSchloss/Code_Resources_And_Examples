@@ -1,12 +1,15 @@
+# Line plot visualization
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # Set up the figure, the axis, and the plot element
 fig, ax = plt.subplots()
-ax.set_facecolor('black')  # Set the plotting area to black
+ax.set_facecolor('black')  
 fig.set_facecolor('black')
 
+# Setting colors for the lines in the plot. 
 colors = ['red', 'blue', 'green', 'yellow', 'cyan']
 lines = [plt.plot([], [], color=c, animated=True)[0] for c in colors]
 xdata, ydata = [], []
