@@ -31,7 +31,8 @@ def chow_test(x1, y1, x2, y2):
     # Chow Test Formula
     N1, K1 = X1.shape
     N2, K2 = X2.shape
-    F = ((model_full.ssr - (model_segment1.ssr + model_segment2.ssr)) / (model_segment1.ssr + model_segment2.ssr)) * ((N1 + N2 - 2 * K1) / K1)
+    F = ((model_full.ssr - (model_segment1.ssr + model_segment2.ssr)) / 
+         (model_segment1.ssr + model_segment2.ssr)) * ((N1 + N2 - 2 * K1) / K1)
 
     # Calculate p-value
     p_value = 1 - stats.f.cdf(F, K1, (N1 + N2 - 2 * K1))
