@@ -96,7 +96,7 @@ if __name__ == "__main__":
     predictor = StockPredictor('GOOG', lookback_period)
     
     today_date = datetime.now().strftime('%Y-%m-%d')  # Get today's date in 'YYYY-MM-DD' format
-    predictor.fetch_and_preprocess('2020-01-01', '2023-08-20')  # Fetch and preprocess data
+    predictor.fetch_and_preprocess('2020-01-01', today_date)  # Fetch and preprocess data
     predictor.create_dataset()  # Create training and testing datasets
     predictor.create_lstm_model()  # Create LSTM model with Tanh activation
     #predictor.create_lstm_model_relu()  # Uncomment to use ReLU activation
