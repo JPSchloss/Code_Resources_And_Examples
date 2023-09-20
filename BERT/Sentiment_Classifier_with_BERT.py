@@ -50,7 +50,11 @@ class SentimentClassifier:
         train_size, val_size = int(0.8 * len(dataset)), len(dataset) - int(0.8 * len(dataset))
         train_dataset, val_dataset = random_split(dataset, [train_size, val_size])
 
-        return DataLoader(train_dataset, batch_size=16, shuffle=True, num_workers=4), DataLoader(val_dataset, batch_size=16, num_workers=4)
+        return DataLoader(train_dataset, batch_size=16, 
+                          shuffle=True, num_workers=4), DataLoader(val_dataset, batch_size=16, num_workers=4)
+
+
+
 
     # Train the model on the given data.
     def train(self, train_dataloader, val_dataloader, epochs=2, lr=2e-5, accum_steps=4):
