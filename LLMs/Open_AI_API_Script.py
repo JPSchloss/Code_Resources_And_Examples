@@ -6,7 +6,6 @@ import openai
 
 openai.api_key  = 'OPENAI_API_KEY_GOES_HERE'
 
-# This fun
 def helper_function(prompt, model="gpt-3.5-turbo"):
     # This assignes the role and the content to be passed to the OpenAI API. 
     messages = [{"role": "user", "content": prompt}]
@@ -29,6 +28,7 @@ text = f"""
 This is text that will be an example that the model \
 can summarize. The model can do many things!
 """
+
 # This is where you define the prompt to send to the model.
 prompt = f"""
 Summarize the text below into a single sentence.
