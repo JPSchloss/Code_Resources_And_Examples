@@ -29,3 +29,5 @@ def summarize_text(text):
 text = "Text to be summarized."
 summary = summarize_text(text)
 print("Summary:", summary)
+
+
