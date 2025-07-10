@@ -1,0 +1,17 @@
+# Document Processing MCP Server Requirements
+
+# Core MCP framework
+fastmcp>=0.3.0
+
+# Document processing libraries
+PyPDF2>=3.0.0          # PDF text extraction
+python-docx>=0.8.11     # Word document processing
+
+# Optional: Enhanced document processing
+# pymupdf>=1.23.0       # Alternative PDF processing (fitz)
+# openpyxl>=3.1.0       # Excel file support
+# beautifulsoup4>=4.12.0 # HTML processing
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

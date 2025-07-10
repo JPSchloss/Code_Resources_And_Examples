@@ -1,0 +1,18 @@
+{
+  "application": "Document Processor",
+  "version": "1.0.0",
+  "settings": {
+    "max_file_size": "10MB",
+    "supported_formats": ["txt", "pdf", "docx", "md", "json", "csv"],
+    "search_options": {
+      "case_sensitive": false,
+      "max_results": 50
+    }
+  },
+  "features": [
+    "text_extraction",
+    "document_search", 
+    "summarization",
+    "file_listing"
+  ]
+}

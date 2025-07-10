@@ -1,0 +1,16 @@
+Machine Learning and Artificial Intelligence
+============================================
+
+This document contains information about machine learning and artificial intelligence.
+Machine learning is a subset of artificial intelligence that focuses on algorithms
+that can learn from data without being explicitly programmed.
+
+Key concepts in machine learning include:
+- Supervised learning
+- Unsupervised learning  
+- Reinforcement learning
+- Neural networks
+- Deep learning
+
+Applications of AI include natural language processing, computer vision,
+robotics, and autonomous systems.
